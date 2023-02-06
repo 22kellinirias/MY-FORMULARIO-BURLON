@@ -5,7 +5,7 @@ body{
 .header {
   background: rgb(238,174,202);
 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  padding: 0.3rem;
+  padding: 0.5rem;
 }
 .header__navegation__titulo {
   color: rgb(71, 11, 11);
@@ -16,20 +16,25 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 .menu__navegation__box {
   display: flex;
   justify-content:center;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 .menu__navegation__box__boton {
-  width: 40rem;
+  width: 20rem;
   border-color: rgb(10, 223, 238);
   background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-  border-radius: 11rem;
+ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  border-radius: 40rem;
 }
 .menu__navegation__box__boton {
   position: relative;
-  animation-duration: 5s;
-  animation-direction: alternate-reverse;
+  animation-duration: 2s;
+  animation: animar 5s alinear 2s infinite alternate;
+  
+
 }
+
+
+
 .menu__navegation__box__botton {
   width: 8rem;
   border-color: rgb(248, 10, 101);
@@ -40,16 +45,15 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   border-radius: 2rem;
   padding: 1%;
 }
-.menu__navegation__box__botton {
-  position: relative;
-  animation-duration: 5s;
-  animation-direction: alternate;
+.menu__navegation__box__botton  {
+  position: absolute;
+  animation: animar 5s alinear 2s infinite alternate;
 }
 .menu__navegation__box__parrafo {
   margin-top: 13%;
 }
 .menu__navegation__label {
-  color: rgb(8, 8, 8);
+  color: rgb(240, 233, 233);
   font-size: xx-large;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
@@ -60,13 +64,30 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 
 .menu__navegation__box__botton:hover {
   left: 10%;
-  transform: rotateY('angle');
+  transform: rotateY(360deg);
 }
 
 .menu__navegation__box__boton:hover {
   left: 20%;
   top: 100px;
   transform: rotateY(360deg);
+}
+
+@keyframes animar{
+  0%{
+    transform: translate(150px,300px);
+  }
+  25%{
+    transform: translate(200px,500px);
+  }
+  
+  50%{
+    transform: traslate(200px,500px);
+  }
+
+  100%{
+    transform: translate3d(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@ body {
 .header {
   background: rgb(238, 174, 202);
   background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
-  padding: 0.3rem;
+  padding: 0.5rem;
 }
 
 .header__navegation__titulo {
@@ -17,21 +17,21 @@ body {
 .menu__navegation__box {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .menu__navegation__box__boton {
-  width: 40rem;
+  width: 20rem;
   border-color: rgb(10, 223, 238);
   background: rgb(34, 193, 195);
   background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
-  border-radius: 11rem;
+  border-radius: 40rem;
 }
 
 .menu__navegation__box__boton {
   position: relative;
-  animation-duration: 5s;
-  animation-direction: alternate-reverse;
+  animation-duration: 2s;
+  animation: animar 5s alinear 2s infinite alternate;
 }
 
 .menu__navegation__box__botton {
@@ -46,9 +46,8 @@ body {
 }
 
 .menu__navegation__box__botton {
-  position: relative;
-  animation-duration: 5s;
-  animation-direction: alternate;
+  position: absolute;
+  animation: animar 5s alinear 2s infinite alternate;
 }
 
 .menu__navegation__box__parrafo {
@@ -56,7 +55,7 @@ body {
 }
 
 .menu__navegation__label {
-  color: rgb(8, 8, 8);
+  color: rgb(240, 233, 233);
   font-size: xx-large;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
@@ -65,7 +64,7 @@ body {
 
 .menu__navegation__box__botton:hover {
   left: 10%;
-  transform: rotateY("angle");
+  transform: rotateY(360deg);
 }
 
 .menu__navegation__box__boton:hover {
@@ -74,6 +73,20 @@ body {
   transform: rotateY(360deg);
 }
 
+@keyframes animar {
+  0% {
+    transform: translate(150px, 300px);
+  }
+  25% {
+    transform: translate(200px, 500px);
+  }
+  50% {
+    transform: traslate(200px, 500px);
+  }
+  100% {
+    transform: translate3d(0);
+  }
+}
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
