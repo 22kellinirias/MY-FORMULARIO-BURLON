@@ -1,3 +1,79 @@
+body {
+  background-image: url(../img/cohete.jpg);
+}
 
+.header {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  padding: 0.3rem;
+}
+
+.header__navegation__titulo {
+  color: rgb(71, 11, 11);
+  font-style: italic;
+  text-align: center;
+}
+
+.menu__navegation__box {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.menu__navegation__box__boton {
+  width: 40rem;
+  border-color: rgb(10, 223, 238);
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+  border-radius: 11rem;
+}
+
+.menu__navegation__box__boton {
+  position: relative;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;
+}
+
+.menu__navegation__box__botton {
+  width: 8rem;
+  border-color: rgb(248, 10, 101);
+  border-style: none;
+  background-color: black;
+  color: rgb(175, 247, 9);
+  text-align: center;
+  border-radius: 2rem;
+  padding: 1%;
+}
+
+.menu__navegation__box__botton {
+  position: relative;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+.menu__navegation__box__parrafo {
+  margin-top: 13%;
+}
+
+.menu__navegation__label {
+  color: rgb(8, 8, 8);
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-bottom: 0%;
+}
+
+.menu__navegation__box__botton:hover {
+  left: 10%;
+  transform: rotateY("angle");
+}
+
+.menu__navegation__box__boton:hover {
+  left: 20%;
+  top: 100px;
+  transform: rotateY(360deg);
+}
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
